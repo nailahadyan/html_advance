@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Halaman HTML Nailah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Nailah Adyan">
+    <meta name="nim" content="233307055">
+  </head>
+  <style>
+    body {
+      font-family: 'Times New Roman';
+    }
+  </style>
+  <body>
+    <h1>From Penjadwalan Pertemuan</h1>
+    <div>
+      <form action="proses.php" method="get"></form>
+      <fieldset> 
+            <legend>Informasi Pribadi</legend>
+            <br>
+
+            <label for="username"> Nama </label> 
+            <input type="text" id="username" name="username"> <br>
+            <br>
+
+            <label for="ph"> No. Telepone</label>
+            <input type="tel" id="ph" name="phone" pattern="^0[0-9]{11}$" required><br>
+            <br>
+
+            <label for="email">Alamat Email </label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br>
+            <br>
+
+            <label for="b">Tanggal Lahir </label>
+            <input type="date" id="b" name="tanggal" min="1987-01-01" max="1993-01-01" required> <br>
+            <br>
+        </fieldset>
+       
+
+        <fieldset> 
+            <legend>Permintaan Pertemuan</legend>
+            <br>
+
+            <label for="tujuan"> Tujuan Pertemuan </label> 
+            <input type="text" id="tujuan" name="tujuan"> <br>
+            <br>
+
+            <label for="vol"> Tingkat Kepentingan Pertemuan</label>
+            <input type="range" id="vol" name="vol" min="0" max="10"> <br>
+            <br>
+
+            <label for="b">Tanggal </label>
+            <input type="date" id="b" name="tanggal" required> <br>
+            <br>
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt" required> <br>
+
+        </fieldset>
+        <br> <input type="submit" value="Submit"/>
+    </div>
+  </body>
+</html>
